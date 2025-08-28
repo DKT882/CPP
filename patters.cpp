@@ -7,7 +7,7 @@ int main(){
         
         for (int j = 0; j < 10; j++)
         {
-            cout<<"* ";
+            cout<<"*";
         }
         cout<<endl;
     }
@@ -31,21 +31,32 @@ int main(){
         }
         for (int j = 0; j < i; j++)
         {
-            cout<<"* ";
+            cout<<"*";
         }
         cout<<endl;
     }
     
-
+    int num=10;
     cout<<endl;
-    for (int i = 0; i < 10; i++)
+    int temp=1;
+    for (int i = 0; i < num*2; i++)
     {
-        
-        for (int j = 0; j < i; j++)
-        {
-            cout<<"* ";
+
+        if (i<=num){
+            for (int j = 0; j < i; j++)
+            {
+                cout<<"*";
+            }
+            cout<<endl;
         }
-        cout<<endl;
+        else if(i>num){
+            for (int j = (num-temp); j > 0; j--)
+            {
+                cout<<"*";
+            }
+            temp+=1;
+            cout<<endl;
+        }
     }
 
 }
