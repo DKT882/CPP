@@ -59,4 +59,21 @@ int main(){
         }
     }
 
+    cout<<endl<<endl;
+    int lastNumber=20;
+    for(int i=1;i<=lastNumber;i++){
+        for (int j = 1; j <= lastNumber; j++)
+        {
+           if (i==1 || i==lastNumber || j==1 || j==lastNumber){
+                cout<<"*";
+            }
+            else{
+                cout<<" ";
+            }
+        }
+        cout<<endl;
+        
+        
+    }
+
 }
