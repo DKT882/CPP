@@ -39,10 +39,6 @@ int main() {
     cout << "Compound Interest = " << (amount - q4_P) << endl;
 
 
-
-
-
-
     float radius, length, breadth, base, height;
 
     cout << "Enter radius of circle: ";
