@@ -2,51 +2,42 @@
 using namespace std;
 
 int main() {
-    int a, b;
+    int q1A, q1B;
     cout << "Enter two numbers: ";
-    cin >> a >> b;
-    cout << "Remainder = " << a % b;
+    cin >> q1A >> q1B;
+    cout << "Remainder = " << q1A % q1B;
 
-
-
-
-     int n;
+     int ques2;
     cout << "\nEnter a number: ";
-    cin >> n;
-    cout << "Square = " << n * n << endl;
-    cout << "Cube = " << n * n * n << endl;
+    cin >> ques2;
+    cout << "Square = " << ques2 * ques2 << endl;
+    cout << "Cube = " << ques2 * ques2 * ques2 << endl;
 
 
-
-    float c, f;
+    float ques3, f;
     cout << "Enter temperature in Celsius: ";
-    cin >> c;
-    f = (c * 9 / 5) + 32;
+    cin >> ques3;
+    f = (ques3 * 9 / 5) + 32;
     cout << "Fahrenheit = " << f << endl;
 
     cout << "Enter temperature in Fahrenheit: ";
     cin >> f;
-    c = (f - 32) * 5 / 9;
-    cout << "Celsius = " << c << endl;
+    ques3 = (f - 32) * 5 / 9;
+    cout << "Celsius = " << ques3 << endl;
 
 
-
-
-
-
-
-    float p, r, t;
+    float q4_P, rq4_R, q4_t;
     cout << "Enter principal, rate, time: ";
-    cin >> p >> r >> t;
+    cin >> q4_P >> rq4_R >> q4_t;
 
-    float si = (p * r * t) / 100;
+    float si = (q4_P * rq4_R * q4_t) / 100;
     cout << "Simple Interest = " << si << endl;
 
-    float amount = p;
-    for (int i = 0; i < t; i++) {
-        amount = amount * (1 + r / 100);
+    float amount = q4_P;
+    for (int i = 0; i < q4_t; i++) {
+        amount = amount * (1 + rq4_R / 100);
     }
-    cout << "Compound Interest = " << (amount - p) << endl;
+    cout << "Compound Interest = " << (amount - q4_P) << endl;
 
 
 
@@ -73,13 +64,13 @@ int main() {
     cout << "Enter three numbers: ";
     cin >> x >> y >> z;
 
-    if (a > b) {
-        if (a > c)
+    if (x > y) {
+        if (x > z)
             cout << "Largest = " << x;
         else
-            cout << "Largest = " << c;
+            cout << "Largest = " << z;
     } else {
-        if (y > c)
+        if (y > x)
             cout << "Largest = " << y;
         else
             cout << "Largest = " << z;
@@ -156,7 +147,7 @@ int main() {
         case '-': cout << "Result = " << numA - numB; break;
         case '*': cout << "Result = " << numA * numB; break;
         case '/': 
-            if (b != 0) cout << "Result = " << numA / numB;
+            if (numB != 0) cout << "Result = " << numA / numB;
             else cout << "Division by zero not allowed";
             break;
         default: cout << "Invalid operator";
