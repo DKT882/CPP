@@ -13,7 +13,6 @@ int main() {
     cout << "Square = " << ques2 * ques2 << endl;
     cout << "Cube = " << ques2 * ques2 * ques2 << endl;
 
-
     float ques3, f;
     cout << "Enter temperature in Celsius: ";
     cin >> ques3;
