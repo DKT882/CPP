@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+
+
 int main() {
     int N, sum = 0;
     cout << "Enter N: ";
@@ -11,16 +13,6 @@ int main() {
     }
 
     cout << "Sum = " << sum << endl;
-    return 0;
-    // kjlaknckasd
-}
-
-
-
-#include <iostream>
-using namespace std;
-
-int main() {
     int num, rev = 0;
     cout << "Enter a number: ";
     cin >> num;
@@ -31,14 +23,6 @@ int main() {
     }
 
     cout << "Reversed = " << rev << endl;
-    return 0;
-}
-
-
-#include <iostream>
-using namespace std;
-
-int main() {
     int choice;
     double a, b;
 
@@ -64,17 +48,6 @@ int main() {
             default: cout << "Invalid choice!\n";
         }
     } while(choice != 5);
-
-    return 0;
-}
-
-
-
-
-#include <iostream>
-using namespace std;
-
-int main() {
     int num;
     cout << "Enter a number: ";
     cin >> num;
@@ -82,14 +55,6 @@ int main() {
     for(int i = 1; i <= 10; i++) {
         cout << num << " x " << i << " = " << num * i << endl;
     }
-    return 0;
-}
-
-
-#include <iostream>
-using namespace std;
-
-int main() {
     int num, count = 0;
     cout << "Enter a number: ";
     cin >> num;
@@ -101,14 +66,6 @@ int main() {
     }
 
     cout << "Digits = " << count << endl;
-    return 0;
-}
-
-
-#include <iostream>
-using namespace std;
-
-int main() {
     int rows = 5;
     for(int i = 1; i <= rows; i++) {
         for(int j = 1; j <= i; j++) {
@@ -116,14 +73,6 @@ int main() {
         }
         cout << endl;
     }
-    return 0;
-}
-
-
-#include <iostream>
-using namespace std;
-
-int main() {
     int num, temp, rev = 0;
     cout << "Enter a number: ";
     cin >> num;
@@ -137,14 +86,6 @@ int main() {
     if(num == rev) cout << "Palindrome" << endl;
     else cout << "Not Palindrome" << endl;
 
-    return 0;
-}
-
-
-#include <iostream>
-using namespace std;
-
-int main() {
     int n;
     long long fact = 1;
     cout << "Enter a number: ";
@@ -155,14 +96,10 @@ int main() {
     }
 
     cout << "Factorial = " << fact << endl;
-    return 0;
-}
 
 
-#include <iostream>
-using namespace std;
 
-int main() {
+
     int secret = 42;  // fixed secret number (you can change it)
     int guess;
 
