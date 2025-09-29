@@ -21,3 +21,36 @@ int main() {
     myDog.bark();
     return 0;
 }
+
+class AnimalBase {
+public:
+    void breathe() {
+        cout << "This animal breathes air." << endl;
+    }
+};
+
+class Mammal : public AnimalBase {
+public:
+    void feedMilk() {
+        cout << "This mammal feeds milk to its young." << endl;
+    }
+};
+
+class Cat : public Mammal {
+public:
+    void meow() {
+        cout << "The cat meows." << endl;
+    }
+};
+
+void multilevelInheritanceDemo() {
+    Cat myCat;
+    myCat.breathe();
+    myCat.feedMilk();
+    myCat.meow();
+}
+
+int main_multilevel() {
+    multilevelInheritanceDemo();
+    return 0;
+}
